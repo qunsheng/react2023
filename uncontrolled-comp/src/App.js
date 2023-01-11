@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState, useRef, useEffect} from 'react';
 import './App.css';
 
 function Controlled() {
@@ -23,6 +23,11 @@ function Controlled() {
 
 function UnControlled() {
   const inputRef = useRef();
+
+  useEffect(() =>{
+    // example for how to set fucus using refs
+    inputRef.current.focus();
+  }, []);
 
   function alertValue() {
     alert(inputRef.current.value);
