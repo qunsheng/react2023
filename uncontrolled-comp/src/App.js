@@ -25,7 +25,7 @@ function UnControlled() {
   const inputRef = useRef();
 
   useEffect(() =>{
-    // example for how to set fucus using refs
+    // example for how to set focus using refs
     inputRef.current.focus();
   }, []);
 
