@@ -14,6 +14,10 @@ function Child(props){
   return <GrandChild />
 }
 
+/**
+ * 
+ * Example to show context share value inside a tree
+ */
 function App() {
   return (
     // provide context
