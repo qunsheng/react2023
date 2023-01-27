@@ -1,0 +1,54 @@
+/* use viewport-relative units to cover page fully */
+.App {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+.towers {
+  display: flex;
+  margin-top: 150px;
+  gap: 50px;
+  justify-content: center;
+}
+
+.tower {
+  position: relative;
+  flex-direction: row;
+  /* border: 1px solid white; */
+  width: 200px;
+}
+
+.tower .line {
+  position: absolute;
+  height: 100px;
+  width: 1px;
+  background-color: white;
+  cursor: pointer;
+  left: 50%;
+  bottom: 0;
+}
+
+.line:hover {
+  background-color: red;
+}
+
+.disks {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  justify-content: end;
+  height: 100%;
+  /* border: 1px solid white; */
+
+}
+
+.disk {
+  background-color: blue;
+  height: 10px;
+  width: 50px;
+}
